@@ -1,0 +1,7 @@
+=====================[GIT]==================
+[1] - Git ==> Distributed Version Control System
+[2] - GitHub ==> Centralized Server
+[3] - Git Has GUI (Graphic User Interface), But Command Line Is More Professional
+[4] - [git status, git add, git push, git commit]
+[5] - [git reset head (fileName)]=> If You Wanted To Remove File From Staging Area
+[6] - 

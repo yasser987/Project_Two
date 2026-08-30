@@ -1,0 +1,89 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Snas", sans-serif;
+  background-color: #272929;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: white;
+  left: 15px;
+  bottom: 0;
+}
+header .container .logo {
+  display: block;
+}
+header .container .logo img {
+  height: 50px;
+}
+header .container nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+}
+header .container nav ul li a {
+  color: white;
+  font-size: 14px;
+  display: block;
+  transition: 0.3s;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+header .container nav ul li a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+/* End Header */

@@ -1,0 +1,48 @@
+===========================
+====[Problems I Found]=====
+===========================
+--[Services Section]
+[1] I Could't Make A Pseudo Element To The Image Tage.
+[2] I Couldn't Center The Icon Tag unless I used align-itself: center;
+[3] Thought I made display: none to one colum from services columns, the 2 columns don't stretch to the whole area.
+[4] When I Type Index: -1, to One Element, It Disappears
+--[About Section]
+[1] 
+[2]  
+--[]
+====================================
+=====[Problems   ChatGpt Solved]====
+=====================================
+--[HTML Structure & Semantics]
+[1] I Used Generic <div> Elements For Major Page Sections Instead Of Semantic <section> Elements.
+[2] I Used Different Heading Levels For Main Sections That Are Actually At The Same Hierarchical Level.
+[3] I Didn't Wrap The Main Page Content Inside A <main> Element.
+
+--[Header & Navigation]
+[1] I Used A <span> For An Interactive Control Instead Of A Semantic <button>.
+[2] I Made The Navigation Menu Depend Only On :hover, So It Isn't Properly Accessible To Keyboard Users.
+[3] I Used A Generic Wrapper For The Main Navigation Instead Of The Semantic <nav> Element.
+
+--[Services Section]
+[1] I Couldn't Add A Pseudo-Element Directly To The <img> Element; Because <img> Is A Replaced Element,
+So I Used A Wrapper For The Decorative Pseudo-Element.
+[2] [2] I Couldn't Center The Icon With text-align: center Because text-align Centers Inline Content, Not The Flex Item Itself.
+I Used align-self: center To Align That Specific Flex Item On The Cross Axis.
+[3] I Used z-index: -1 Expecting The Element To Simply Move Behind The Image, But A Negative z-index Can Place It Behind
+Parent Backgrounds Or Other Stacking Contexts. I Should Control The Stacking Context
+Or Use Explicit Positive Layers Instead.
+
+--[Responsive Design]
+[1] I Relied Too Much On Common Device Breakpoints Instead Of Adding Breakpoints Where The Content Actually Starts To Break.
+[2] I Used min-width: 768px And max-width: 768px In Different Media Queries, So Both Rules Can Apply At Exactly 768px.
+[3] I Used overflow-x: hidden, Which Can Hide Responsive Overflow Problems Instead Of Fixing Their Cause.
+[4] I Learned That Responsive Breakpoints Should Be Driven By The Layout And Content,
+While Device Sizes Are Mainly Useful As Testing References.
+
+--[SEO & Semantic HTML]
+[1] I Used A Generic Page Title Instead Of A Descriptive <title> That Clearly Identifies The Page.
+[2] I Didn't Add A Meta Description To Provide A Concise Description Of The Page.
+[3] I Learned That Semantic HTML Can Support SEO And Accessibility, But It Doesn't Automatically Improve Search Rankings By Itself.
+
+--[CSS Problems]
+[1] I Set Fixed Image Dimensions Without object-fit, Which Could Distort Images With Different Aspect Ratios.
