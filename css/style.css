@@ -854,3 +854,208 @@ button {
   color: var(--paragprah-main-color);
 }
 /* End Pricing Section */
+/* Start Subscribe Section */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #1f2021;
+  color: white;
+}
+.subscribe .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .subscribe .container {
+    flex-direction: row;
+  }
+  .subscribe .container .input-section {
+    flex: 1;
+  }
+}
+.subscribe .input-section {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid white;
+  position: relative;
+}
+.subscribe .input-section::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.subscribe .input-section input {
+  background-color: transparent;
+  border: none;
+  flex: 1;
+  padding: 15px 30px 15px 50px;
+  width: 80%;
+  position: relative;
+  color: white;
+}
+.subscribe .input-section input:focus {
+  outline: none;
+}
+.subscribe .input-section input::placeholder {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+}
+.subscribe .input-section .subscribe-button {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+.subscribe .subscribe-text p {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .subscribe p {
+    max-width: 40%;
+  }
+}
+/* End Subscribe Section */
+/* Start Contact Section  */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact .contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (min-width: 992px) {
+  .contact .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .contact .contact-form {
+    flex: 1;
+  }
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  padding: 15px 25px;
+  font-size: 15px;
+  border: 1px solid var(--paragraph-secondary-color);
+  width: 100%;
+}
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+  outline: none;
+}
+.contact textarea {
+  resize: none;
+  min-height: 200px;
+  overflow-y: auto;
+}
+.contact .contact-form button {
+  align-self: flex-end;
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.contact .contact-info {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 992px) {
+  .contact .contact-info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.contact .phone-info,
+.contact .address-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact .phone-info p,
+.contact .address-info p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.contact .phone-info .info,
+.contact .address-info .info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact .phone-info .info span,
+.contact .address-info .info span {
+  color: var(--paragraph-secondary-color);
+  font-size: 15px;
+}
+/* End Contact Section */
+/* Start Footer Section */
+footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  background-color: #1f2021;
+  color: white;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer img {
+  width: 150px;
+}
+footer .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer .social-icons p {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+footer .social-icons .icons {
+  display: flex;
+  gap: 20px;
+}
+footer .social-icons .icons i {
+  font-size: 20px;
+}
+footer .copy-text {
+  font-size: 15px;
+  margin-top: 70px;
+}
+footer .copy-text span {
+  color: var(--main-color);
+}
+/* End Footer Section */
