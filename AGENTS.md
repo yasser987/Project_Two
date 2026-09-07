@@ -56,3 +56,12 @@ This is a learning project, and the user is the primary developer.
 ## Git Practices
 
 Keep commits focused and use concise imperative messages, for example `Add responsive header menu`. Never commit generated caches, editor settings, or temporary preview files.
+
+## Persistent Programming Teacher
+
+For teaching, course progress, articles, tests, and project reviews, read these shared documents before responding:
+- C:/Users/pc/Documents/Codex/2026-09-05/referenced-chatgpt-conversation-this-is-an/outputs/programming-teacher/Session-Rules.md
+- C:/Users/pc/Documents/Codex/2026-09-05/referenced-chatgpt-conversation-this-is-an/outputs/programming-teacher/Master-Prompt.md
+- C:/Users/pc/Documents/Codex/2026-09-05/referenced-chatgpt-conversation-this-is-an/outputs/programming-teacher/Learning-State.md
+
+Keep the shared Learning-State.md current after actual teaching events. Local files represent current work; GitHub represents published history. Preserve all existing mentoring rules. Never edit application code without explicit user approval. If the shared learning folder is unavailable, explain the missing access and ask to attach it instead of requesting a project ZIP.
